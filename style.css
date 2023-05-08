@@ -55,6 +55,8 @@ body {
 }
 
 
+
+
 .navBar {
     display: flex;
     justify-content: space-between;
@@ -63,7 +65,7 @@ body {
 }
 
 span {
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 
@@ -186,14 +188,14 @@ span {
     margin-bottom: 0;
 }
 
-.topnavtext span {
+.navtext span {
     padding-top: 1.5rem;
     padding-left: 1.5rem;
     color: hsl(240, 100%, 5%);
     font-size: 1.125rem;
 }
 
-.topnavtext {
+.navtext {
     display: flex;
     flex-direction: column;
     padding-top: 3.893rem;
@@ -268,4 +270,44 @@ span:hover {
     font-weight: 901;
 }
 
+.bigImgMobile,
+    .icon-menu {
+        display: none;
+    }
 
+
+
+@media screen and (max-width: 600px) {
+  .mainBody{
+
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.75rem 1rem 5rem 1rem;
+        gap: 16px;
+
+    grid-template-areas:
+        'nav'
+        'bigImgMobile'
+        'new'
+        'BrightFuture'
+        'smalltext'
+        'beige1' 
+        'beige2'
+        'beige3'
+        'beige3';
+  }  
+
+  .bigImgDesk,
+    .navText {
+        display: none;
+    }
+
+    .bigImgMobile,
+    .icon-menu {
+        display: block;
+    }
+
+
+    
+}
