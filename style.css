@@ -166,6 +166,7 @@ span {
     line-height: 3.5rem;
     margin-right: 1.4rem;
     
+    
 
 }
 
@@ -262,6 +263,9 @@ span:hover {
 .beige h4:hover {
     color: hsl(5, 85%, 63%);
     cursor:pointer
+}
+.BrightFuture h1{
+    font-weight: 901;
 }
 
 
