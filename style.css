@@ -16,7 +16,7 @@ body {
         'nav nav nav nav nav nav'
         'bigImgDesk bigImgDesk bigImgDesk bigImgDesk new new'
         'BrightFuture BrightFuture smalltext smalltext new new'
-        'beige1 beige1 beige2 beige2 beige3 beige3';
+        'featuredSection featuredSection featuredSection featuredSection featuredSection featuredSection';
     grid-gap: 1.75rem 1.88rem;
     background-color: hsl(36, 100%, 99%);
     padding: 5.6rem 10.31rem 8.06rem 10.31rem;
@@ -42,17 +42,12 @@ body {
     grid-area: new;
 }
 
-.beige1 {
-    grid-area: beige1;
-}
-
-.beige2 {
-    grid-area: beige2;
-}
-
-.beige3 {
-    grid-area: beige3;
-}
+.featuredSection {
+    grid-area: featuredSection;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.75rem;
+  }
 
 
 
@@ -307,6 +302,13 @@ span:hover {
     .icon-menu {
         display: block;
     }
+
+    .featuredSection {
+   
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.75rem;
+      }
 
 
     
